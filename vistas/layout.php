@@ -42,7 +42,7 @@
 
     </header>
 
-    <main class="col-12 bg-primary p-4 d-flex flex-column align-items-center justify-content-start" >
+    <main class="col-12 bg-white y p-4 d-flex flex-column align-items-center justify-content-start" >
     <?php 
 
      if (!isset($vista))
