@@ -83,6 +83,20 @@ class servicioDatos extends Conexion
         }
     }
 
+    public function validarUsuario($email, $clave){
+
+        $sql = "SELECT email, rol, idusuarios 
+                FROM usuarios
+                WHERE email='".$email."'
+                AND clave='".$clave."'"; 
+
+        $query = $this->conexion->query($sql);
+
+        $resultado = $query->fetch_all(MYSQLI_ASSOC);
+
+        return $resultado;
+    }
+
     
 
 
