@@ -1,5 +1,6 @@
 
-        <h1 class="h3 mb-3"> Quines Somos </h1>
+        <h1 class="h3 mb-3"> Hola esto lo cambie
+         </h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
