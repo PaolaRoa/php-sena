@@ -97,6 +97,22 @@ class servicioDatos extends Conexion
         return $resultado;
     }
 
+    public function setSession($rol, $idusuario){
+
+        switch ($rol) {
+            case '1':
+                # code...
+                break;
+            case '2':
+                break;
+            case '3':
+                break;         
+            default:
+                # code...
+                break;
+        }
+    }
+
     
 
 
