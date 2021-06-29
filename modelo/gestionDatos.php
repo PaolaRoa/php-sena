@@ -101,16 +101,46 @@ class servicioDatos extends Conexion
 
         switch ($rol) {
             case '1':
-                # code...
+                $_SESSION['rol'] = "admin";
+                $_SESSION['user'] = $this->getProfesor($idusuario)[0];
                 break;
             case '2':
+                $_SESSION['rol'] = "profesor";
+                $_SESSION['user'] = $this->getProfesor($idusuario)[0];
                 break;
             case '3':
+                $_SESSION['rol'] = "estudiante";
+                $_SESSION['user'] = $this->getEstudiante($idusuario)[0];
                 break;         
-            default:
-                # code...
-                break;
         }
+
+    }
+
+    public function getProfesor($id){
+
+        $sql = "SELECT *
+        FROM profesores
+        WHERE idusuarios='".$id."'"; 
+
+        $query = $this->conexion->query($sql);
+
+        $resultado = $query->fetch_all(MYSQLI_ASSOC);
+
+        return $resultado;
+
+    }
+    public function getEstudiante($id){
+
+        $sql = "SELECT *
+        FROM estudiantes
+        WHERE idusuarios='".$id."'"; 
+
+        $query = $this->conexion->query($sql);
+
+        $resultado = $query->fetch_all(MYSQLI_ASSOC);
+
+        return $resultado;
+
     }
 
     

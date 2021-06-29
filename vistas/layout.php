@@ -1,3 +1,7 @@
+<?php
+         session_start();
+       
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,9 +36,11 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">Crud Basico</a>
+                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">Profesores</a>
                   </li>
-                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="../controladores/LogoutControlador.php">Salir</a>
+                  </li>
                 </ul>
               </div>
             </div>

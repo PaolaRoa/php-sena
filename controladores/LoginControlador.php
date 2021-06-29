@@ -11,10 +11,10 @@
 
     if(count($resultado) > 0){
 
-        $_SESSION['email'] = $resultado['email'];
-        $_SESSION['rol'] = $resultado['rol'];
-
-        $vista = "nosotros.php";
+        session_start();
+        //asigna las variables de sesion
+        $servicioDatos->setSession($resultado[0]['rol'],$resultado[0]['idusuarios']);
+        $vista = "bienvenido.php";
     }
     else{
 

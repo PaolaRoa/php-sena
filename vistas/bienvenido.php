@@ -1,12 +1,9 @@
 
-        <h1 class="h3 mb-3"> Bienvenido a Colegio Los Pollitos</h1>
-        <br>
-        <h4>
+        <h1 class="h3 mb-3"> Bienvenido
         <?php
         echo $_SESSION['user']['nombre'];
-        ?></h4>
-        
-         
+        ?>
+         </h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
@@ -22,7 +19,13 @@
   <li class="nav-item">
     <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=2">Empresa</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=3">Formulario</a>
+  </li>
 
+  <li class="nav-item">
+    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=4">Tabla</a>
+  </li>
 
 
 </ul>
