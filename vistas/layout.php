@@ -34,13 +34,34 @@
                   <li class="nav-item">
                     <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=2">Productos</a>
                   </li>
-
+                <?php
+                  if($_SESSION['rol']=="admin"){
+                    ?>
                   <li class="nav-item">
-                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">Profesores</a>
+                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=4">Profesores</a>
                   </li>
+                <?php
+                  }
+                ?>
+                <?php
+                  if($_SESSION['rol']=="admin" || $_SESSION['rol']=="profesor"){
+                    ?>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">estudiantes</a>
+                  </li>
+                <?php
+                  }
+                ?>
+                <?php
+                  if(isset($_SESSION['rol'])){
+                    ?>
                   <li class="nav-item">
                     <a class="nav-link" href="../controladores/LogoutControlador.php">Salir</a>
                   </li>
+                <?php
+                  }
+                ?>
+                  
                 </ul>
               </div>
             </div>

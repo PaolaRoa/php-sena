@@ -5,9 +5,7 @@
 
     
     <div class="col-12 col-md-8 col-lg-8 bg-light border rounded p-5">
-        <p> En esta seccion vamos hacer un crud basico </p>
-        <p> listar crear borrar actualizar</p>
-        <p> una tabla de la base de datos</p>
+        <p>En esta sección puede gestionar los datos de los profesores registrados o bien registrar un nuevo profesor</p>
         
     </div>
 

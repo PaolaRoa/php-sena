@@ -20,6 +20,12 @@ class enrutamiento {
             case 3:
                 $v="crud.php";
                 break;
+            case 4:
+                $v="crudProfesores.php";
+                break;
+            case 5:
+                $v="crudEstudiantes.php";
+                break;
             default:
                 $v="home.php";
                 break;
