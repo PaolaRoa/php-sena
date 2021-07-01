@@ -1,5 +1,10 @@
-
-        <h1 class="h3 mb-3">Profesores</h1>
+<?php
+  if($_SESSION['rol']!= 'admin'){
+    echo "Usted no esta autorizado para acceder a este recurso";
+}
+else{
+?>
+<h1 class="h3 mb-3">Profesores</h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
@@ -24,6 +29,7 @@
 
     <?php 
 
+
 if (!isset($subVista))
      $subVista="crudIntro.php";
 
@@ -35,3 +41,6 @@ if (!isset($subVista))
 
 
 </div>
+<?php
+}
+?>

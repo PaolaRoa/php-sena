@@ -22,9 +22,9 @@
       <td><?php echo $profe['nombre']?></td>
       <td><?php echo $profe['email']?></td>
       <td><?php echo $profe['idusuarios']?></td>
-      <td> <a href="../controladores/profeDetalleControlador.php?id=<?php echo $profe['codigo']?>"> Detalle </a> </td>
-      <td> <a href="../controladores/profeDatosEditarControlador.php?id=<?php echo $profe['codigo']?>"> Editar </a> </td>
-      <td> <a href="../controladores/profeDetalleBorrarControlador.php?id=<?php echo $profe['codigo']?>"> Borrar </a> </td>
+      <td> <a href="../controladores/DetalleProfesorControlador.php?id=<?php echo $profe['codigo']?>"> Detalle </a> </td>
+      <td> <a href="../controladores/EditarProfesorControlador.php?id=<?php echo $profe['codigo']?>"> Editar </a> </td>
+      <td> <a href="../controladores/BorrarProfesorControlador.php?id=<?php echo $profe['codigo']?>"> Borrar </a> </td>
 
     </tr>
 <?php
