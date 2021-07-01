@@ -58,6 +58,20 @@ class ProfesorData extends Conexion
         return false;
     }
 
+    public function obtenerProfesor($id){
+        $sql = "SELECT p.*, u.email FROM profesores p
+                JOIN usuarios u ON p.idusuarios = u.idusuarios
+                WHERE p.idusuarios ='".$id."'";
+        $consulta = $this->conexion->query($sql);
+        $profesor = $consulta->fetch_all(MYSQLI_ASSOC);
+
+        
+        
+        $this->conexion->close();
+
+        return $profesor;
+    }
+
 
 }
 
