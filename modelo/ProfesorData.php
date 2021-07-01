@@ -49,7 +49,11 @@ class ProfesorData extends Conexion
         $userId =  $this->conexion->insert_id;
         $insertProfesor = "INSERT INTO profesores (documento, nombre, idusuarios) VALUES ('".$documento."','".$nombre."','".$userId."')";
         $resultadoProfesor = $this->conexion->query($insertProfesor);
-        return "insertado";
+        $this->conexion->close();
+        if($resultado && $resultadoProfesor){
+            return true;
+        }
+        return false;
     }
 
 
