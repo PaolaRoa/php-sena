@@ -19,27 +19,35 @@ if( (isset($_POST['documento'])) && (!empty($_POST['documento'])) &&
         if ($isEmailValid && $isDocValid) { 
 
             $crearProfesor = $datos->crearProfesor($documento, $email, $nombre, $clave);
-            echo $crearProfesor;
+            if($crearProfesor){
+                $datos = new ProfesorData();
+                $listaProfesor = $datos->obtenerProfesores();
+                $subVista="listarProfesores.php";
+            }
+            else{
+                $subVista = "formularioCrearProfesor.php";
+            }
+            
          } 
          else if(!$isEmailValid && !$isDocValid) {
              
                 $ErrorCodigo = "El documento ".$documento." y el email ".$email." ya estan registrado";
-                echo $ErrorCodigo;
+                $subVista = "formularioCrearProfesor.php";
         }
         else if(!$isEmailValid){
             $ErrorCodigo = "El email ".$email." ya esta registrado";
-                echo $ErrorCodigo;
+            $subVista = "formularioCrearProfesor.php";
         }
         else{
             $ErrorCodigo = "El documento ".$documento." ya esta registrado";
-            echo $ErrorCodigo;
+            $subVista = "formularioCrearProfesor.php";
         }
     }else {
-            echo "else";
-        // $subVista = "formularioCrearUsuario.php";       
+            
+            $subVista = "formularioCrearProfesor.php";    
     }
 
-    // $vista = "crud.php";
-    // require "../vistas/layout.php"
+    $vista = "crud.php";
+    require "../vistas/layout.php"
 
 ?>
