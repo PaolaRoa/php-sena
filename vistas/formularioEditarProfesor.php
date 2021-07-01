@@ -1,6 +1,6 @@
 <p class="fs-2"> Editar Profesor </p>
 
-<form class="row g-3" action="../controladores/usuarioEditarControlador.php" method="post">
+<form class="row g-3" action="../controladores/GuardarEdicionProfesorControlador.php" method="post">
 <div class="col-12">
     <label class="form-label">Documento: <strong> <?php echo $documento ?> </strong> </label>
     <input type="hidden"  name="documento"  value="<?php echo $documento ?>" >
@@ -12,7 +12,7 @@
   </div>
   <div class="col-12">
   <label class="form-label">Correo</label>
-    <input type="email" class="form-control" name="correo" placeholder="usuario@dominio"  value="<?php echo $email ?>" required>
+    <input type="email" class="form-control" name="email" placeholder="usuario@dominio"  value="<?php echo $email ?>" required>
   </div>
   <div class="col-12">
   <label class="form-label">Id Usuarios</label>

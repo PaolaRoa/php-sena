@@ -7,9 +7,7 @@ if($_SESSION['rol'] != 'admin'){
 else{
 
     $id = $_GET['id'];
-    //echo "ID o CODIGO recivido = ", $id ;
-
-    require ('../modelo/ProfesorData.php');
+        require ('../modelo/ProfesorData.php');
     $datos = new ProfesorData();
     $profesor = $datos->obtenerProfesor($id);
 

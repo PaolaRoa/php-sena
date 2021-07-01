@@ -72,6 +72,24 @@ class ProfesorData extends Conexion
         return $profesor;
     }
 
+    public function actualizarProfesor($nombre, $email, $idusuarios){
+        $sqlProfesores = "UPDATE profesores SET nombre = '".$nombre."'
+                          WHERE idusuarios = ".$idusuarios."";
+        $resultadoProfesores = $this->conexion->query($sqlProfesores);
+        $sqlUsuario = "UPDATE usuarios SET email = '".$email."' WHERE idusuarios = ".$idusuarios."";
+        $resultadoUsuario = $this->conexion->query($sqlUsuario);
+        return $resultadoUsuario;
+        if($resultadoProfesores && $resultadoUsuario){
+            $this->conexion->close();
+            return true; 
+         }
+        else{
+            $this->conexion->close();
+            return false;
+        }
+        
+    }
+
 
 }
 
