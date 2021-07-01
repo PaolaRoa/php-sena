@@ -22,6 +22,7 @@ if( (isset($_POST['documento'])) && (!empty($_POST['documento'])) &&
             if($crearProfesor){
                 $datos = new ProfesorData();
                 $listaProfesor = $datos->obtenerProfesores();
+                //var_dump($listaProfesor);
                 $subVista="listarProfesores.php";
             }
             else{

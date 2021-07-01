@@ -14,7 +14,9 @@ class ProfesorData extends Conexion
 
     public function obtenerProfesores() {
 
-        $consulta= $this->conexion->query('SELECT * FROM profesores');
+        $consulta= $this->conexion->query('SELECT p.*, u.email FROM profesores p
+                                            JOIN usuarios u
+                                            ON p.idusuarios = u.idusuarios');
         $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
         $this->conexion->close();
         return $resultado;
