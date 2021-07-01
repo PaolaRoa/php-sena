@@ -11,6 +11,7 @@
      <!-- Bootstrap CSS -->
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="../assets/css/misEstilos.css">
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Taller Boostrap</title>
 </head>
 <body>
@@ -96,6 +97,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js" ></script>
+
 
 </body>
 </html>

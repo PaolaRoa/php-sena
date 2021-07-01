@@ -90,6 +90,14 @@ class ProfesorData extends Conexion
         
     }
 
+    public function eliminarProfesor($id){
+
+        $sql = "DELETE FROM usuarios WHERE idusuarios =".$id."";
+        $resultado = $this->conexion->query($sql);
+        $this->conexion->close();
+        return $resultado;
+    }
+
 
 }
 
