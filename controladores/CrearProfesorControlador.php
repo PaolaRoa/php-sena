@@ -18,14 +18,8 @@ if( (isset($_POST['documento'])) && (!empty($_POST['documento'])) &&
 
         if ($isEmailValid && $isDocValid) { 
 
-            $inserarUsuario = $datos->crearUsuario($codigo,$nombre,$correo,$contrasena, $pais);
-               if ($inserarUsuario) {
-                  $listar = new servicioDatos();
-                   $listaUsuarios = $listar->obtenerUsuarios();
-                   $subVista = "listarUsuarios.php";
-                   } else {
-                       $subVista = "formularioCrearUsuario.php";
-                }
+            $crearProfesor = $datos->crearProfesor($documento, $email, $nombre, $clave);
+            echo $crearProfesor;
          } 
          else if(!$isEmailValid && !$isDocValid) {
              

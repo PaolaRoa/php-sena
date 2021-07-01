@@ -41,9 +41,16 @@ class ProfesorData extends Conexion
         }else{
             return true;
         }
-
     }
-    
+    public function crearProfesor($documento, $email, $nombre, $clave){
+        $sql = "INSERT INTO usuarios (email, clave, rol) values ('".$email."','".$clave."','2')";
+        $resultado = $this->conexion->query($sql);
+        //devuelve el ultimo id
+        $userId =  $this->conexion->insert_id;
+        $insertProfesor = "INSERT INTO profesores (documento, nombre, idusuarios) VALUES ('".$documento."','".$nombre."','".$userId."')";
+        $resultadoProfesor = $this->conexion->query($insertProfesor);
+        return "insertado";
+    }
 
 
 }
