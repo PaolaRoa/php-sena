@@ -39,7 +39,7 @@ if( (isset($_POST['documento'])) && (!empty($_POST['documento'])) &&
             $subVista = "formularioCrearProfesor.php";
         }
         else{
-            $ErrorCodigo = "El documento ".$documento." ya esta registrado";
+            $ErrorCodigo = "El documento ".$documento." ya esta registrados";
             $subVista = "formularioCrearProfesor.php";
         }
     }else {

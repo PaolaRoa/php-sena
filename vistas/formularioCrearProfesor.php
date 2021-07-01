@@ -1,3 +1,11 @@
+<?php
+  if(isset($ErrorCodigo )){
+    ?>
+      <div class="alert alert-danger" role="alert">
+          <?php echo $ErrorCodigo  ?>
+    </div>
+<?php  }
+?>
 <form class="row g-3" action="../controladores/CrearProfesorControlador.php" method="POST">
 <div class="col-12">
   <label class="form-label">Documento</label>
