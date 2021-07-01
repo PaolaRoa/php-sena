@@ -18,6 +18,7 @@ session_start();
                 break;
             case 'list':
                 listProfesors();
+                break;
             default:
                 echo "ups! parece que algo anda mal";
                 break;
