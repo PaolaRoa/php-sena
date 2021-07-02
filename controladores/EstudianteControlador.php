@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+   
     if($_SESSION['rol'] == 'admin' || $_SESSION['rol'] == 'profesor'){
         $action = $_GET['action'];
 
@@ -21,7 +21,7 @@ session_start();
         }
     }
     else{
-        
+        echo "rol".$_SESSION['rol']."rol";
         echo "Usted no esta autorizado para acceder a este recurso";
     }
 

@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if($_SESSION['rol']!= 'admin'){
+  if($_SESSION['rol']!= 'admin' && $_SESSION['rol'] != 'profesor'){
     echo "Usted no esta autorizado para acceder a este recurso";
 }
 else{
