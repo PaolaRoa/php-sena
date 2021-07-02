@@ -1,12 +1,17 @@
 <h2 class="h2 mb-3"> Historia  </h2>
 
 
-<div class="card" style="width: 45rem;">
+<div class="card" style="width: 35rem;">
 <img src="../assets/pic/Collage-600x350.png" class="card-img-top" alt="...">
-<p>En el año 2000 se radica en su actual sede campestre e implementa su énfasis bilingüe con el inglés. Su proyecto educativo propende por la construcción integral de personas visionarias de su propio proyecto de vida, exitosas y leales a sus principios, a través de desempeños desarrollados en las diferentes áreas estratégicas institucionales: La cultura formativa (valores), la cultura comunicativa (español-inglés-francés) y la cultura investigativa (Enseñanza para la comprensión y Pedagogía conceptual) en el cultivo de conocimientos científicos, artísticos y literarios.
+<div style="line-height:2.0">
+
+<div style="text-align:justify;">
+
+<div style="line-height:2.0">
+<p>En el año 2000 se radica en su actual sede campestre e implementa su énfasis bilingüe con el inglés. Su proyecto educativo propende por la construcción integral de personas visionarias de su propio proyecto de vida, exitosas y leales a sus principios, a través de desempeños desarrollados en las diferentes áreas estratégicas institucionales:<br> La cultura formativa (valores), la cultura comunicativa (español-inglés-francés) y la cultura investigativa (Enseñanza para la comprensión y Pedagogía conceptual) en el cultivo de conocimientos científicos, artísticos y literarios.<br>
 
 
-
+<div style="line-height:2.0">
 Actualmente el Colegio está organizado por niveles de la siguiente manera:
 
 Nivel 1: Pree kínder, Kínder, Transición, Primero.
