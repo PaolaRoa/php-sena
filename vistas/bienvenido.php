@@ -1,6 +1,7 @@
 
         <h1 class="h3 mb-3"> Bienvenido
         <?php
+
         echo $_SESSION['user']['nombre'];
         ?>
          </h1>

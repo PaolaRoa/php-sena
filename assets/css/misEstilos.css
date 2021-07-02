@@ -1,3 +1,11 @@
 .ico{
 height: 30px;
 }
+#footerA{
+    position: relative ;
+    width: 100vw ;
+    bottom: 0;
+}
+main{
+    min-height: 78vh;
+}

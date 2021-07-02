@@ -91,7 +91,7 @@
    ?>
     </main>
 
-    <footer class="bg-dark d-flex justify-content-lg-around align-items-center">
+    <footer id="footerA" class=" bg-dark d-flex justify-content-lg-around align-items-center">
        
     <div class="d-flex justify-content-lg-around align-items-center m-2">
 
@@ -106,8 +106,12 @@
     </footer>
     
 
+    
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js" ></script>
+
+
 
 
 </body>
