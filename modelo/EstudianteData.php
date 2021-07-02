@@ -61,18 +61,18 @@ class EstudianteData extends Conexion
         
     }
 
-    public function obtenerProfesor($id){
-        $sql = "SELECT p.*, u.email FROM profesores p
-                JOIN usuarios u ON p.idusuarios = u.idusuarios
-                WHERE p.idusuarios ='".$id."'";
+    public function obtenerEstudiante($id){
+        $sql = "SELECT e.*, u.email FROM estudiantes e
+                JOIN usuarios u ON e.idusuarios = u.idusuarios
+                WHERE e.idusuarios ='".$id."'";
         $consulta = $this->conexion->query($sql);
-        $profesor = $consulta->fetch_all(MYSQLI_ASSOC);
+        $estudiante = $consulta->fetch_all(MYSQLI_ASSOC);
 
         
         
         $this->conexion->close();
 
-        return $profesor;
+        return $estudiante;
     }
 
     public function actualizarProfesor($nombre, $email, $idusuarios){

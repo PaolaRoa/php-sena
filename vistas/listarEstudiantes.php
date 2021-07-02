@@ -42,8 +42,8 @@
       <td><?php echo $e['nota2']?></td>
       <td><?php echo $e['nota3']?></td>
       <td><?php echo $e['promedio']?></td>
-      <td> <a href="../controladores/DetalleProfesorControlador.php?id=<?php echo $profe['idusuarios']?>"> Detalle </a> </td>
-      <td> <a href="../controladores/EditarProfesorControlador.php?id=<?php echo $profe['idusuarios']?>"> Editar </a> </td>
+      <td> <a href="../controladores/DetalleEstudianteControlador.php?id=<?php echo $e['idusuarios']?>"> Detalle </a> </td>
+      <td> <a href="../controladores/EditarEstudianteControlador.php?id=<?php echo $e['idusuarios']?>"> Editar </a> </td>
       <td onClick = confirmDelete(<?php echo $profe['idusuarios']?>)>Borrar</td>
 
     </tr>
@@ -68,7 +68,7 @@
           }).then((result) => {
             if (result.isConfirmed) {
               
-              window.location=`../controladores/EliminarProfesorControlador.php?id=${id}`;
+              window.location=`../controladores/EliminarEstudianteControlador.php?id=${id}`;
             }
           })
         )
