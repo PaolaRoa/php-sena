@@ -1,5 +1,7 @@
 
 <?php
+  session_start();
+  $rol = $_SESSION['rol'];
   if(isset($errormsg)){
     echo "<div class='alert alert-warning' role='alert'>";
     echo $errormsg;
@@ -44,8 +46,10 @@
       <td><?php echo $e['promedio']?></td>
       <td> <a href="../controladores/DetalleEstudianteControlador.php?id=<?php echo $e['idusuarios']?>"> Detalle </a> </td>
       <td> <a href="../controladores/EditarEstudianteControlador.php?id=<?php echo $e['idusuarios']?>"> Editar </a> </td>
-      <td onClick = confirmDelete(<?php echo $profe['idusuarios']?>)>Borrar</td>
-
+      <?php
+        if($rol == 'admin'){?>
+      <td onClick = confirmDelete(<?php echo $e['idusuarios']?>)>Borrar</td>
+      <?php } ?>
     </tr>
 <?php
  }
@@ -57,7 +61,7 @@
 <script>
         const confirmDelete =(id)=> (
               Swal.fire({
-            title: '¿seguro?',
+            title: '¿Seguro?',
             text: "Despues de eliminar no podras revertirlo",
             icon: 'warning',
             showCancelButton: true,

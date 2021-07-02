@@ -55,6 +55,15 @@
                   }
                 ?>
                 <?php
+                  if($_SESSION['rol']=="estudiante"){
+                    ?>
+                  <li class="nav-item">
+                    <a class="nav-link" href=<?php echo "../controladores/EstudianteVerNotasControlador.php?id=".$_SESSION['user']['idusuarios'].""?>>Mis Notas</a>
+                  </li>
+                <?php
+                  }
+                ?>
+                <?php
                   if(isset($_SESSION['rol'])){
                     ?>
                   <li class="nav-item">
