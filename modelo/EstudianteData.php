@@ -75,14 +75,15 @@ class EstudianteData extends Conexion
         return $estudiante;
     }
 
-    public function actualizarProfesor($nombre, $email, $idusuarios){
-        $sqlProfesores = "UPDATE profesores SET nombre = '".$nombre."'
+    public function actualizarEstudiante($nombre, $email, $idusuarios, $nota1, $nota2, $nota3){
+        $sqlEstudiantes = "UPDATE estudiantes SET nombre = '".$nombre."', nota1 =".$nota1.",nota2 =".$nota2.",nota3=".$nota3."
                           WHERE idusuarios = ".$idusuarios."";
-        $resultadoProfesores = $this->conexion->query($sqlProfesores);
+        $resultadoEstudiantes = $this->conexion->query($sqlEstudiantes);
+        
         $sqlUsuario = "UPDATE usuarios SET email = '".$email."' WHERE idusuarios = ".$idusuarios."";
         $resultadoUsuario = $this->conexion->query($sqlUsuario);
-        return $resultadoUsuario;
-        if($resultadoProfesores && $resultadoUsuario){
+
+        if($resultadoEstudiantes && $resultadoUsuario){
             $this->conexion->close();
             return true; 
          }
@@ -90,6 +91,7 @@ class EstudianteData extends Conexion
             $this->conexion->close();
             return false;
         }
+
         
     }
 
