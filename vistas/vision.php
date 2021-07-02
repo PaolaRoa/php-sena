@@ -1,8 +1,9 @@
-<h2 class="h2 mb-3"> vision  </h2>
+<h2 class="h2 mb-3"> Visión  </h2>
 
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis provident veritatis, autem impedit natus commodi voluptatum, velit reiciendis, porro a culpa aut. Provident accusamus voluptatem eligendi, minus magni rem?</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis provident veritatis, autem impedit natus commodi voluptatum, velit reiciendis, porro a culpa aut. Provident accusamus voluptatem eligendi, minus magni rem?</p>
+<div class="card" style="width: 45rem;">
+<img  class="img-fluid" src="../assets/pic/colegio.png" alt=""></div>
 
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis provident veritatis, autem impedit natus commodi voluptatum, velit reiciendis, porro a culpa aut. Provident accusamus voluptatem eligendi, minus magni rem?</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis provident veritatis, autem impedit natus commodi voluptatum, velit reiciendis, porro a culpa aut. Provident accusamus voluptatem eligendi, minus magni rem?</p>
+<p> Para el tercer decenio nos vemos como una institución educativa ubicada dentro de las mejores del país, con un proyecto consolidado en el idioma francés en el mismo rango de certificación y proficiencia del idioma inglés, vanguardista en las tendencias de la renovación, avance e investigación pedagógica, sólida en la formación integral de nuestros estudiantes y orgullosa de aportar al país ciudadanos íntegros, realizados en lo personal y familiar, solidarios y reconocidos por su liderazgo y la apropiación de responsabilidad en el ejercicio de su profesión.</p>
+
+</p>
     
