@@ -5,7 +5,7 @@
 }
 else{
 ?>
-<h1 class="h3 mb-3">Profesores</h1>
+<h1 class="h3 mb-3">Estudiantes</h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
@@ -14,8 +14,8 @@ else{
     <ul class="nav flex-row flex-md-column flex-lg-column ">
  
   <li class="nav-item">
-    <a class="nav-link" href="../controladores/ProfesorControlador.php?action=create">Agregar Profesor</a>
-    <a class="nav-link" href="../controladores/ProfesorControlador.php?action=list">Profesores registrados</a>
+    <a class="nav-link" href="../controladores/EstudianteControlador.php?action=create">Agregar Estudiante</a>
+    <a class="nav-link" href="../controladores/EstudianteControlador.php?action=list">Estudiantes registrados</a>
 
     
   </li>

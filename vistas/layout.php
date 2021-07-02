@@ -49,7 +49,7 @@
                   if($_SESSION['rol']=="admin" || $_SESSION['rol']=="profesor"){
                     ?>
                   <li class="nav-item">
-                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">estudiantes</a>
+                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=5">estudiantes</a>
                   </li>
                 <?php
                   }
