@@ -14,7 +14,14 @@ else{
     <ul class="nav flex-row flex-md-column flex-lg-column ">
  
   <li class="nav-item">
+  <?php
+  if($_SESSION['rol']== 'admin'){
+    ?>
     <a class="nav-link" href="../controladores/EstudianteControlador.php?action=create">Agregar Estudiante</a>
+
+  <?php
+  }
+  ?>
     <a class="nav-link" href="../controladores/EstudianteControlador.php?action=list">Estudiantes registrados</a>
 
     
