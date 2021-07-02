@@ -20,8 +20,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0">MyApp</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0"></a>
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +34,7 @@
                     <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=2">Productos</a>
+                    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=2">Servicios Estudiantiles</a>
                   </li>
                 <?php
                   if($_SESSION['rol']=="admin"){
@@ -85,10 +86,11 @@
        
     <div class="d-flex justify-content-lg-around align-items-center m-2">
 
-        <div class="m-2"> <img class="ico" src="../assets/pic/github_w.png" alt=""></div>
+        
         <div class="d-flex flex-column align-items-center">
-             <p class="text-white m-0 p-0"> Mi nonmbre </p>
-             <p class="text-white m-0 p-0 "> usuario git Hub </p>
+             <p class="text-white m-0 p-0"> Colegio New Colombia  </p>
+             <p class="text-white m-0 p-0 "> Bogotá D.C. </p>
+             <p class="text-white m-0 p-0 "> Calle 202 No 28 - 31 Tel  </p>
         </div>
     </div>
 

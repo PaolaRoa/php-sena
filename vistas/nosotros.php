@@ -1,12 +1,5 @@
 
-        <h1 class="h3 mb-3"> Bienvenido a Colegio Los Pollitos</h1>
-        <br>
-        <h4>
-        <?php
-        echo $_SESSION['user']['nombre'];
-        ?></h4>
-        
-         
+        <h1 class="h3 mb-3"> COLEGIO NEW COLOMBIA </h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
@@ -14,15 +7,18 @@
         
     <ul class="nav flex-row flex-md-column flex-lg-column ">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=0">Mision</a>
+    <a class="nav-link active" aria-current="page" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=0">Misión</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=1">Vision</a>
+    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=1">Visión</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=2">Empresa</a>
+    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=2">Historia</a>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=1&SubRutaOpc=4">Contactos</a>
+  </li>
 
 
 </ul>
