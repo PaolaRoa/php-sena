@@ -7,15 +7,16 @@
      <!-- Bootstrap CSS -->
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="../assets/css/misEstilos.css">
-    <title>Taller Boostrap</title>
+     <link rel="stylesheet" href="../assets/css/layout.css">
+    <title>Taller Colegio</title>
 </head>
 <body>
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-#FFFF00">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0">MyApp</a>
+              <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0">Colegio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,11 +31,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=2">Productos</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link" href="../controladores/rutasControlador.php?rutaOpc=3">Crud Basico</a>
                   </li>
-                 
                 </ul>
               </div>
             </div>
@@ -43,24 +42,26 @@
     </header>
 
     <main class="col-12 bg-white y p-4 d-flex flex-column align-items-center justify-content-start" >
-    <?php 
+      
+            <?php 
 
-     if (!isset($vista))
-          $vista="home.php";
+            if (!isset($vista))
+                  $vista="home.php";
 
-        require $vista;
-    
-   ?>
+                require $vista;
+            
+          ?>
+       
     </main>
 
     <footer class="bg-dark d-flex justify-content-lg-around align-items-center">
        
     <div class="d-flex justify-content-lg-around align-items-center m-2">
 
-        <div class="m-2"> <img class="ico" src="../assets/pic/github_w.png" alt=""></div>
+        <div class="m-2"> <img class="ico" src="../assets/pic/logoSena.png" alt=""></div>
         <div class="d-flex flex-column align-items-center">
-             <p class="text-white m-0 p-0"> Mi nonmbre </p>
-             <p class="text-white m-0 p-0 "> usuario git Hub </p>
+             <p class="text-white m-0 p-0"> Colegio Sena </p>
+             <p class="text-white m-0 p-0 "> Bogotá D.c. </p>
         </div>
     </div>
 

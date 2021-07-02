@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+   
+  .navbar{
+    padding: 20px 0;
+  }
+
+
+.estiloLogin{
+    width: 400px ;
+    padding: 25px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 40px;
+    position: relative;
+    left: 300px;
+    background-color: rgb(255, 255, 255)
+}
+
+.contenedorPrincipal a{
+  float:none;
+  width: 300px ;
+  color: black;
+}
+
+li a:hover {
+  background-color: #CECCDC;
+}
+
+footer{
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 90px;
+}

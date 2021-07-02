@@ -1,9 +1,11 @@
 
-        <h1 class="h3 mb-3"> Quines Somos </h1>
+<link rel="stylesheet" href="../assets/css/layout.css">
+        
+        <h1 class="h3 mb-3"> Quines Somos  </h1>
 
 <div class="col-12 d-flex flex-column align-items-lg-start align-items-md-center flex-lg-row justify-content-lg-around align-items-center"> 
 
-    <div class="col-12 col-md-8 col-lg-3 bg-light border rounded p-2 m-3 m-lg-0"> 
+    <div class="contenedorPrincipal"> 
         
     <ul class="nav flex-row flex-md-column flex-lg-column ">
   <li class="nav-item">
@@ -27,18 +29,20 @@
 </ul>
 
    </div>
+    
 
+    
     <div class="col-12 col-md-8 col-lg-8 bg-light border rounded p-5">
 
-    <?php 
+            <?php 
 
-if (!isset($subVista))
-     $subVista="mision.php";
+        if (!isset($subVista))
+            $subVista="mision.php";
 
-   require $subVista;
+          require $subVista;
 
-?>
-        
+        ?>
+                
     </div>
 
 
