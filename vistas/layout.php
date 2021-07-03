@@ -12,7 +12,8 @@
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="../assets/css/misEstilos.css">
      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Taller Boostrap</title>
+    <link  rel="icon"   href="../assets/pic/icons8-centro-de-estudiantes-48.png" type="image/png" />
+    <title>Colegio</title>
 </head>
 <body>
 
