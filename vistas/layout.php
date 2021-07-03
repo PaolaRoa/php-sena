@@ -16,8 +16,12 @@
     <title>Colegio</title>
      <link rel="stylesheet" href="../assets/css/layout.css">
     <title>Taller Colegio</title>
+
 </head>
 <body>
+
+       
+      
 
     <header>
 
@@ -103,7 +107,7 @@
         <div class="d-flex flex-column align-items-center">
              <p class="text-white m-0 p-0"> Colegio New Colombia  </p>
              <p class="text-white m-0 p-0 "> Bogotá D.C. </p>
-             <p class="text-white m-0 p-0 "> Calle 202 No 28 - 31 Tel  </p>
+             <p class="text-white m-0 p-0 "> Calle 202 No 28 - 31 Tel 4750000 </p>
         </div>
     </div>
 
