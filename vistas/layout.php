@@ -14,16 +14,17 @@
      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link  rel="icon"   href="../assets/pic/icons8-centro-de-estudiantes-48.png" type="image/png" />
     <title>Colegio</title>
+     <link rel="stylesheet" href="../assets/css/layout.css">
+    <title>Taller Colegio</title>
 </head>
 <body>
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-#FFFF00" >
             <div class="container-fluid">
-            <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0"></a>
-            
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="../controladores/rutasControlador.php?rutaOpc=0">Colegio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -82,14 +83,16 @@
     </header>
 
     <main class="col-12 bg-white y p-4 d-flex flex-column align-items-center justify-content-start" >
-    <?php 
+      
+            <?php 
 
-     if (!isset($vista))
-          $vista="home.php";
+            if (!isset($vista))
+                  $vista="home.php";
 
-        require $vista;
-    
-   ?>
+                require $vista;
+            
+          ?>
+       
     </main>
 
     <footer id="footerA" class=" bg-dark d-flex justify-content-lg-around align-items-center">

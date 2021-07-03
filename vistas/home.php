@@ -1,5 +1,8 @@
 
 <form class="form-signin" action="../controladores/LoginControlador.php" method="POST">
+<link rel="stylesheet" href="../assets/css/layout.css">
+
+<form class="estiloLogin" action="../controladores/LoginControlador.php" method="POST">
   <!-- existe mensaje de error? -->
   <?php
     if(isset($errorMsg)){
@@ -16,3 +19,5 @@
   <input type="password" id="clave" name="clave" class="form-control" placeholder="Contraseña" required>
   <button class="btn btn-lg btn-primary btn-block m-2" type="submit">Iniciar sesión</button>
 </form>
+
+
